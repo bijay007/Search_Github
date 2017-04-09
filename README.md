@@ -1,10 +1,10 @@
-# Search_Github
+# Search_Github :mag: :eyes:
 
 ---
 
-A simple web-app that searches for github users and shows their bio and repositories.
+A simple web-app that searches for github users and shows their bio and repositories :octocat:
 
-** Technologies Used **  
+**Technologies Used**  
 
 1. Vanilla Javascript
 2. HTML5
