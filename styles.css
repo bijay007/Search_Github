@@ -1,0 +1,160 @@
+body {
+    width: 640px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* -------- form input and button -------- */
+.banner {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+}
+.search {
+    margin-top: 20px;
+}
+input {
+    padding: 8px;
+    width: 200px;
+}
+input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 3px #9ecaed;
+}
+button {
+    padding: 8px;
+    margin-left: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    text-shadow: 0.5px 0.5px 0.5px #001;
+    font-size: 14px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* --------    error message div --------- */
+.errormsg > p, .norepos > p {
+    padding: 10px;
+    background-color: #fadbdb;
+    color: #f11;
+    border: 1px solid #888;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 275px;
+    margin: 10px auto;
+}
+
+.mainbody {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* -------- user biography section -------- */
+.userinfo {
+    display: flex;
+    padding: 15px;
+}
+img {
+    padding: 12px;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 10%;
+}
+aside.biography {
+    text-align: left;
+    padding: 15px;
+}
+.login, .bio {
+    font-size: 16px;
+}
+.name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* -------- user repos list section -------- */
+.listheading > h3 {
+    border-bottom: 2px solid #555;
+    margin: 15px;
+    padding: 10px;
+}
+.allrepos {
+    list-style-type: none;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+li span:first-child {
+    font-weight: bold;
+}
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+/* For extra smaller devices upto 450px wide (xs) */
+@media screen and (max-width: 450px){
+    body {
+        width: 80%;
+        font-size: 14px;
+    }
+    .norepos > p, .errormsg > p {
+        max-width: 140px;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .userinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        max-height: 80px;
+        max-width: 80px
+    }
+    aside.biography {
+        text-align: center;
+    }
+    .listheading{
+        text-align: center;
+    }
+    li {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 15px 5px 5px;
+    }
+}
+
+/* For smaller devices upto 640px wide (sm) */
+@media screen and (min-width: 451px) and (max-width: 640px){
+    body {
+        width: 90%;
+        font-size: 16px;
+    }
+    .norepos > p, .errormsg > p {
+        max-width: 200px;
+    }
+    .userinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        max-height: 120px;
+        max-width: 120px
+    }
+    aside.biography {
+        text-align: center;
+    }
+    li {
+        padding: 7px 22px 7px 7px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github Repo Finder</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- initial banner and search form-->
+    <header class="banner">
+        <form class="search">
+            <input type="text" name="username" placeholder="Search Username...">
+            <button type="submit">Search</button>
+        </form>
+        <aside class="errormsg"></aside>
+    </header>
+
+    <main class="mainbody">
+
+        <!-- user info section-->
+        <section class="userinfo">
+            <img src="" class="userimg">
+            <aside class="biography">
+                <span class="login"></span>
+                <p class="name"></p>
+                <p class="bio"></p>
+            </aside>
+        </section>
+
+        <!-- user repos list section -->
+        <section class="userrepos">
+            <div class="listheading"></div>
+            <aside class="norepos"></aside>
+            <ul class="allrepos"></ul>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
